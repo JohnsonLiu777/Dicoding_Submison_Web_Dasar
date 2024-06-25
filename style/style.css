@@ -1,0 +1,335 @@
+*{
+    font-family: "Quicksand",sans-serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header{
+    width: 100%;
+}
+
+/* Nav */
+header nav{
+    width: 100%;
+    background-color: #344261;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+
+header nav h3{
+    margin-left: 30px;
+    font-size: 24px;
+    color: white;
+   
+}
+
+header nav ul {
+    display: flex;
+    gap: 1.5rem;
+    margin-right: 30px;
+    padding-block: 10px;
+
+}
+
+
+header nav ul li{
+    list-style: none;
+    font-size: 20px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+
+    
+}
+
+header nav ul li a:hover{
+    color: #86abfa;
+    font-weight: bold;
+ 
+}
+
+/* Img back ground */
+.background{
+    display: flex;
+    margin-top: -20px;
+    height: 700px;
+    background-image: url(Background2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    background-position: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+
+    
+}
+
+.background h3 {
+    font-size: 25px;
+    font-weight: bold;
+  
+}
+
+.background p{
+    font-size: 20px;
+}
+/* Content */
+
+main{
+    padding-bottom: 50px;
+    background-color: #5E677E;
+    display: flex;
+    flex-direction: row;
+
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap:40px;
+    margin-top: 20px;
+   padding-left: 40px;
+}
+
+.content article{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.content article img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    padding: 20px;
+  
+}
+.content article{
+    background-color: #414854;
+    border-radius: 10px;
+    box-shadow: 3px 6px 4px 3px rgb(53, 51, 51);
+ 
+}
+
+.content article .deskirption{
+    margin-top: 5px;
+}
+
+.content article .deskirption h2 {
+    color: white;
+    font-size: 28px;
+}
+
+.content article .deskirption h3{
+    color: white;
+    font-size: 22px;
+}
+
+.content article .deskirption p{
+    color: white;
+    font-size: 18px;
+}
+
+#study .deskirption p a{
+    color: #DE9F9F;
+    text-decoration: none;
+}
+
+#study .deskirption p a:hover{
+    color: #dd1d1d;
+    font-weight: bold;
+}
+/* Profile */
+aside{
+    margin-left: 70px;
+    margin-right: 50px;
+    background-color: #828795;
+    width: 30%;
+    height: 65vh;
+    margin-top: 30px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 3px 6px 4px 3px rgb(53, 51, 51);
+}
+aside .profile{
+    display: flex;
+    flex-direction: column;
+}
+
+aside .profile .profile-header{
+    margin-top: 24px;
+    height: 390px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    line-height: 15px;
+}
+
+aside .profile .profile-header > h2{
+    font-size: 28px;
+    font-weight:900;
+
+}
+
+aside .profile .profile-header img{
+    height: 180px;
+    width: 180px;
+    border-radius: 50vh;
+
+}
+
+aside .profile .medsos{
+    
+    display: flex;
+    justify-content: center;
+}
+
+aside .profile .medsos ul{
+    list-style: none;
+    margin-right: 30px;
+
+}
+
+aside .profile .medsos ul li{
+    line-height: 24px;
+
+}
+
+aside .profile .medsos ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+aside .profile .medsos ul li:hover i{
+    color: #0a3aa1;
+    font-weight: bold;
+}
+
+aside .profile .medsos ul li:hover a{
+    color: #0a3aa1;
+    font-weight: bold;
+}
+
+/* Modal */
+.dialog {
+    background-color:#7288b8;
+    width: 70vh;
+    height: 40vh;
+    border-radius: 20px;
+    border-style: none;
+    box-shadow: 2px 2px 2px 3px rgb(88, 83, 83);
+    color: white;
+}
+
+.dialog a{
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+   
+}
+
+.dialog a:hover{
+    color: #0d3375;
+}
+
+.blur {
+    filter: blur(3px); 
+}
+
+.button{
+    background-color: #344261;
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    border: 2px solid rgb(56, 52, 52);
+    padding: 8px;
+    font-weight: bold;
+    box-shadow: 1px 2px 2px rgb(68, 67, 67);
+}
+
+.button:hover{
+    background-color: #7288b8;
+    cursor: pointer;
+}
+
+
+
+
+/* Footer */
+footer{
+    background-color: #54607D;
+    text-align: center;
+    color: white;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+main{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    margin-right: 25px;
+}
+
+.content article{
+    flex-direction: column;
+    align-items: center;
+  
+}
+.deskirption h2{
+    text-align: center;
+}
+.deskirption{
+    margin-left: 10px;
+}
+
+aside{
+    width: 70%;
+    height: 65vh;
+}
+
+}
+
+@media screen and (max-width: 395px) {
+aside{
+    height: 80vh;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
